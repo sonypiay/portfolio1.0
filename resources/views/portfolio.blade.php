@@ -119,7 +119,7 @@
       <div class="uk-grid-medium uk-grid-match" uk-grid>
         <div class="uk-width-1-2@xl uk-width-1-2@l uk-width-1-2@m uk-width-1-1@s">
           <div class="uk-border-rounded uk-box-shadow-large" uk-lightbox uk-scrollspy="cls: uk-animation-slide-top; delay: 200; repeat: false">
-            <a href="{{ asset('images/portfolio/biznetanalytic/2.png') }}" data-caption="BiznetWifi Analytic"><div class="uk-background-cover uk-background-top-center uk-height-large uk-width-1-1" style="background-image: url({{ asset('images/portfolio/biznetanalytic/1.png') }});"></div></a>
+            <a href="{{ asset('images/portfolio/biznetanalytic/2.png') }}" data-caption="BiznetWifi Analytic"><div class="uk-background-cover uk-background-top-center uk-height-large uk-width-1-1" style="background-image: url({{ asset('images/portfolio/biznetanalytic/2.png') }});"></div></a>
             @for( $i = 1; $i <= 7; $i++ )
             <a hidden href="{{ asset('images/portfolio/biznetanalytic/' . $i . '.png') }}" data-caption="BiznetWifi Analytic"><div class="uk-background-cover uk-background-top-center uk-height-large uk-width-1-1" style="background-image: url({{ asset('images/portfolio/biznetanalytic/' . $i . '.png') }});"></div></a>
             @endfor
