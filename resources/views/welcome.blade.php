@@ -1,99 +1,47 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Laravel</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+<!DOCTYPE html>
+<html lang="{{ app()->getLocale() }}">
+<head>
+  @include('inc.meta-item')
+  <title>sonypiay.com | Homepage</title>
+</head>
+<body>
+  <section class="uk-container uk-margin-top uk-margin-bottom">
+    <div class="uk-width-3-4@xl uk-width-3-4@l uk-width-2-3@m uk-width-1-1@s uk-align-center">
+      <div class="uk-card uk-card-body uk-card-large uk-card-default hello-container">
+        <div class="uk-grid-medium" uk-grid>
+          <div class="uk-width-1-4@xl uk-width-1-4@l uk-width-1-4@m uk-width-1-1@s">
+            <div class="uk-text-center">
+              <img src="{{ asset('images/avatar/me.jpg') }}" class="uk-border-circle">
             </div>
+          </div>
+          <div class="uk-width-expand">
+            <div class="hello-heading">Hi, I'm Sony</div>
+            <div class="hello-lead">Web Developer Based in Jakarta, Indonesia.</div>
+            <div class="uk-margin hello-content">
+              <p>
+                I really passionate with web programming, linux, network, learn everything autodidact on the Internet.
+                I start code when i was in a high schools, with my friend and my teacher who supported me as well. My first job was as an Engineer in an Internet Service Provider company.
+                I currently study at Mercubuana University in Meruya, Jakarta Barat and focus on <strong>Skripsi</strong>.
+                <br><br>
+                Basically, i don't have an experience in other company as Web Developer, Software Engineer or even Fullstack Developer.
+                But i created several projects such as Company Profile, Inventory &amp; Internal Systems, E-Commerce, Hotspot Portal, Mikrotik Controller and IPTV on LG TV webOS.
+                Some projects are still  on my <a target="_blank" href="https://github.com/sonypiay/">GitHub</a>.
+                <br><br>
+                Currently develop as a startup company, <a target="_blank" href="http://labmode.id">Labmode Indonesia</a>
+              </p>
+              <div class="uk-margin-top uk-grid-small uk-child-width-auto" uk-grid>
+                <div>
+                  <strong><a href="mailto:sonypiay@mail.com">Send an Email</a></strong>
+                </div>
+                <div>
+                  <strong><a href="{{ route('my_portfolio') }}">Portfolio</a></strong>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </body>
+      </div>
+    </div>
+  </section>
+</body>
 </html>

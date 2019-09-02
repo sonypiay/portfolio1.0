@@ -1,0 +1,58 @@
+html, body {
+  background: $color3;
+}
+
+.hello-container {
+  margin-top: 1em;
+  border-radius: 10px;
+  .hello-heading {
+    @include fontsetting( $font-secondary, 32px, 700, normal, normal, -0.8px );
+    color: #666666;
+  }
+  .hello-lead {
+    @include fontsetting( $font-secondary, 18px, 700, normal, normal, -0.8px );
+    color: #999999;
+  }
+  .hello-content {
+    @include fontsetting( $font-secondary, 16px, 400, normal, normal, -0.8px );
+    color: #666666;
+    a {
+      color: $color1;
+    }
+  }
+}
+
+.bg-portfolio {
+  .portfolio-content {
+    .portfolio-title {
+      @include fontsetting( $font-primary, 64px, 100, normal, normal, -0.8px );
+    }
+    .portfolio-description {
+      @include fontsetting( $font-primary, 24px, 300, normal, normal, -0.8px );
+    }
+  }
+}
+
+.bg-portfolio-default {
+  background: none;
+  color: #ffffff;
+  .portfolio-content {
+    .portfolio-visit {
+      background: none;
+      color: #ffffff;
+      @include fontsetting( $font-primary, 20px, 300, normal, normal, -0.8px );
+      text-decoration: none;
+    }
+  }
+}
+.bg-portfolio-primary {
+  background: #ffffff;
+  .portfolio-content {
+    .portfolio-visit {
+      background: none;
+      color: $color3;
+      @include fontsetting( $font-primary, 20px, 300, normal, normal, -0.8px );
+      text-decoration: none;
+    }
+  }
+}

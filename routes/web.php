@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PagesController@index')->name('homepage');
+Route::get('/portfolio', 'PagesController@my_portfolio')->name('my_portfolio');
