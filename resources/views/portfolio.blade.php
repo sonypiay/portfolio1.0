@@ -55,6 +55,7 @@
           <div class="uk-border-rounded uk-box-shadow-large" uk-lightbox uk-scrollspy="cls: uk-animation-slide-top; delay: 200; repeat: false">
             <a href="{{ asset('images/portfolio/biznetwifi.png') }}" data-caption="BiznetWifi Portal"><div class="uk-background-cover uk-background-top-center uk-height-large uk-width-1-1" style="background-image: url({{ asset('images/portfolio/biznetwifi.png') }});"></div></a>
             <a hidden href="{{ asset('images/portfolio/biznetwifi2.png') }}" data-caption="BiznetWifi Portal"><div class="uk-background-cover uk-background-top-center uk-height-large uk-width-1-1" style="background-image: url({{ asset('images/portfolio/biznetwifi2.png') }});"></div></a>
+            <a hidden href="{{ asset('images/portfolio/biznetwifi3.png') }}" data-caption="BiznetWifi Portal"><div class="uk-background-cover uk-background-top-center uk-height-large uk-width-1-1" style="background-image: url({{ asset('images/portfolio/biznetwifi3.png') }});"></div></a>
           </div>
         </div>
       </div>
