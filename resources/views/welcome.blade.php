@@ -21,7 +21,7 @@
               <p>
                 I really passionate with web programming, linux, network, learn everything autodidact on the Internet.
                 I start code when i was in a high schools, with my friend and my teacher who supported me as well. My first job was as an Engineer in an Internet Service Provider company.
-                I currently study at Mercubuana University in Meruya, Jakarta Barat and focus on <strong>Skripsi</strong>.
+                I was graduated from Mercubuana University in 2020 as a Bachelor Degree of Information System.
                 <br><br>
                 Basically, i don't have an experience in other company as Web Developer, Software Engineer or even Fullstack Developer.
                 But i created several projects such as Company Profile, Inventory &amp; Internal Systems, E-Commerce, Hotspot Portal, Mikrotik Controller and IPTV on LG TV webOS.
